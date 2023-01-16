@@ -1,0 +1,14 @@
+<td>
+    <a (click)="ChangeStatus(tododetail)" style="cursor: pointer;padding-right: 10px !important;">  
+        <i [ngClass]="tododetail.isCompleted? 'fa fa-check-circle' : 'fa fa-circle-o' "></i>
+    </a>
+</td>
+<td>
+    {{tododetail.name}}
+</td>
+<td>
+    {{tododetail.date | date}}
+</td>
+<td>
+    <i class="fa fa-trash" [ngClass]="tododetail.isActive? 'text-danger' : '' " (click)="Delete(tododetail)" ></i>
+</td>

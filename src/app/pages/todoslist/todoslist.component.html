@@ -1,0 +1,6 @@
+<h1>My Todo List</h1>
+<table class="table">
+    <tr *ngFor="let item of todoList">
+        <app-todo [tododetail]="item"></app-todo>
+    </tr>
+</table>
